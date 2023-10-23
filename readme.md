@@ -1,1 +1,1 @@
-https://codingwithlucy.github.io/goit-markup-hw-06/
+https://codingwithlucy.github.io/goit-markup-hw-07/
