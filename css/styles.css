@@ -1159,6 +1159,12 @@ transform: translateY(0%);
     width: 408px;
     padding:  72px 24px 24px 24px;
 }
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
 }
 
 
@@ -1355,5 +1361,11 @@ transform: translateY(0%);
 .modal-window {
     width: 408px;
     padding:  72px 24px 24px 24px;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
 }
 }
