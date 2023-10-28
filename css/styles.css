@@ -455,7 +455,7 @@ img {
 .footer-flex {
     display: flex;
     align-items: baseline;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container-footer {
@@ -509,7 +509,7 @@ img {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-    margin-top: 0;
+    margin-top: 72px;
 }
 
 .section-portfolio {
@@ -659,6 +659,7 @@ transform: translateY(0%);
 .form-subscribe {
     display: flex;
     gap: 24px;
+    flex-direction: column;
 }
 
 .form-subscribe-input {
@@ -686,7 +687,7 @@ transform: translateY(0%);
     letter-spacing: 0.02em;
     color: #FFFFFF;
     margin-bottom: 16px;
-    margin-top: 0;
+    margin-top: 72px;
 }
 
 .button-subscribe {
@@ -1021,6 +1022,17 @@ transform: translateY(0%);
     width: 408px;
     padding:  72px 24px 24px 24px;
 }
+
+.form-subscribe {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.social-media {
+    margin-top: 0;
+}
 }
 
 
@@ -1160,10 +1172,19 @@ transform: translateY(0%);
     padding:  72px 24px 24px 24px;
 }
 
-.footer-flex {
+.form-subscribe {
     display: flex;
-    align-items: baseline;
+    gap: 24px;
     flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.subscribe {
+    margin-top: 0;
+}
+
+.social-media {
+    margin-top: 0;
 }
 }
 
@@ -1287,11 +1308,6 @@ transform: translateY(0%);
     height: 88px;
 }
 
-.footer-flex {
-    display: flex;
-    align-items: baseline;
-}
-
 .container-footer {
     margin-right: 120px;
 }
@@ -1336,16 +1352,6 @@ transform: translateY(0%);
     fill: var(--CLOUD);
 }
 
-.social-media {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin-bottom: 16px;
-    margin-top: 0;
-}
-
 .section-portfolio {
     padding: 96px 0 120px 0;
 }
@@ -1367,5 +1373,21 @@ transform: translateY(0%);
     display: flex;
     align-items: baseline;
     flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.form-subscribe {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.subscribe {
+    margin-top: 0;
+}
+
+.social-media {
+    margin-top: 0;
 }
 }
