@@ -1364,7 +1364,7 @@ transform: translateY(0%);
 @media screen and (min-device-pixel-ratio: 1),
   screen and (min-resolution: 96dpi),
   screen and (min-resolution: 1dppx) {
-  .card {
+  .main-view {
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background.jpg);
   }
 }
@@ -1372,7 +1372,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .card {
+  .main-view {
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background2.jpg);
   }
 }
