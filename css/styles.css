@@ -79,8 +79,6 @@ body {
 }
 
 .mobile-navigation .link,
-.mobile-address .link,
-.mobile-navigation .link,
 .mobile-address .link {
     font-family: Roboto;
     font-size: 36px;
@@ -96,7 +94,7 @@ body {
     flex-direction: column;
 }
 
-#mobile-mail {
+#mobile-tel {
     color: var(--IRIS);
     font-family: Roboto;
     font-size: 36px;
@@ -107,7 +105,7 @@ body {
     text-transform: capitalize;
 }
 
-#mobile-tel {
+#mobile-mail {
     color: var(--SLATE);
     font-size: 20px;
     font-style: normal;
@@ -186,6 +184,7 @@ body {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .is-active {
@@ -220,6 +219,7 @@ ul {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .list-item-adv {
@@ -1020,10 +1020,6 @@ transform: translateY(0%);
 
 .container {
     max-width: 1158px;
-}
-
-.menu-toggle {
-    display: none;
 }
 
 .address {
