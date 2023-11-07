@@ -28,8 +28,20 @@ body {
     padding: 96px 0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479) {
 .container {
-    max-width: 479px;
+    max-width: 320px;
+}
+    
+.container-footer,
+.container-footmedia,
+.container-footsub {
+    max-width: 320px;
+}
+}
+
+.container {
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -633,7 +645,8 @@ transform: translateY(0%);
 }
 
 .form-subscribe-input {
-    width: 398px;
+    width: calc(100vw - 30px);
+    max-width: 398px;
     height: 40px;
     border: 1px solid var(--WHITE);
     background-color: transparent;
@@ -691,6 +704,7 @@ transform: translateY(0%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 480px;
 }
 
 .is-hidden {
@@ -897,7 +911,7 @@ transform: translateY(0%);
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 768px;
 }
 
 .menu-toggle {
