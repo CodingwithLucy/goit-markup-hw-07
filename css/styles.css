@@ -28,18 +28,6 @@ body {
     padding: 96px 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 479) {
-.container {
-    max-width: 320px;
-}
-    
-.container-footer,
-.container-footmedia,
-.container-footsub {
-    max-width: 320px;
-}
-}
-
 .container {
     max-width: 480px;
     margin: 0 auto;
@@ -418,11 +406,13 @@ img {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .client {
     width: calc((100% - 24px) / 2);
     height: 88px;
+    flex-shrink: 0;
 }
 
 .icon-client-link {
@@ -435,10 +425,12 @@ img {
     align-items: center;
     color: var(--LIGHTSLATE);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
 }
 
 .icon-client {
     fill: currentColor;
+    flex-shrink: 0;
 }
 
 .icon-client-link:hover,
@@ -905,6 +897,23 @@ transform: translateY(0%);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+.container {
+    max-width: 320px;
+}
+        
+.container-footer,
+.container-footmedia,
+.container-footsub {
+    max-width: 320px;
+}
+    
+.client {
+    width: calc(100% - 30px);
+    height: 88px;
+}
+}
+
 @media screen and (min-width: 768px) {
 .section {
     padding: 120px 0;
@@ -977,12 +986,6 @@ transform: translateY(0%);
 
 .list-item-team {
     max-width: calc((100% - 24px) / 2);
-}
-
-.list-clients {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
 }
 
 .client {
@@ -1104,12 +1107,6 @@ transform: translateY(0%);
 
 .list-item-team {
     max-width: calc((100% - 72px) / 4);
-}
-
-.list-clients {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
 }
 
 .client {
